@@ -95,6 +95,16 @@ hr {
   padding-left: 10.5%;
 }
 
+.spotify-box {
+  width: 90px;
+  height: 80px;
+  margin-right: 90%;
+  margin-bottom: 10%;
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+}
+
 .site-main {
   display: flex;
   flex-direction: column;
