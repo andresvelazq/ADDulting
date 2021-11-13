@@ -55,6 +55,19 @@ hr {
   width: 90px;
   height: 30px;
   margin-left: 16px;
+  border-radius: 20%;
+  border: none;
+  color: white;
+  background: #4d9eb1;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #65cd65;
+}
+
+.timer__btn--stop {
+  background: red;
 }
 
 
