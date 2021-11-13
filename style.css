@@ -23,11 +23,21 @@ hr {
 
 }
 
+/* button {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+
+} */
+
 
 .timer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
   border-radius: 25px;
   background-color: #51a9bd;
   height: 150px;
@@ -35,6 +45,18 @@ hr {
   padding: 50px;
 
 }
+
+.timer__part {
+  font-size: 56 px;
+  font-weight: bold;
+}
+
+.timer__btn {
+  width: 90px;
+  height: 30px;
+  margin-left: 16px;
+}
+
 
 .start {
   display: flex;
@@ -90,6 +112,7 @@ hr {
   margin-top: 10px;
   flex-wrap: wrap;
   align-content: center;
+
 }
 
 .testtask {
