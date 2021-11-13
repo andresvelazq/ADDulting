@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBpdAmST1s6FD9yAmCrUoPLQ-mg8BGXCac",
+          authDomain: "addulting-fc16e.firebaseapp.com",
+          projectId: "addulting-fc16e",
+          storageBucket: "addulting-fc16e.appspot.com",
+          messagingSenderId: "941943380813",
+          appId: "1:941943380813:web:dcf31919ed4cdc5c493504",
+          measurementId: "G-89VD8JX662"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+
+    <h1>I'm an ADDult</h1>
+
+    <section id="signedOut">
+        <button id="signInBtn">Google Sign In</button>
+    </section>
+    
+    <section id="singedIn" hidden="true">
+        <div id="userDetails"></div>
+        <button id="signOutBtn">Sign Out</button>
+    </section>
+
+</body>
+</html>
