@@ -43,3 +43,6 @@ Study Statistics  ~~ANDRES
 
 Spotify API Implementation  ~~MINNIE
 --Link Study/White Noise Playlist
+
+Sign-in Popup
+--Allow Users to sign in with some account to save their information and make use of database storage
