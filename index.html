@@ -13,13 +13,23 @@
 
 
   <header class = "site-header">
-  <div id = "site-header-name">
-    ADDulting
-  </div>
-  <div id = "site-header-socials">
-    Report  Setting
-    <input type="button" onclick="googleLogin()" value="Login"></input>
-  </div>
+
+    <!-- woo v's spotify code -->
+
+    <div class= "spotify-box">
+      <div style= "position: relative; left: 10%; top: -700%; border-radius: 5%; width: 300px; overflow: hidden;">
+      <iframe src="https://open.spotify.com/embed/playlist/5vwNi0Km340HsC5UfwaaIa?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+      </iframe>
+      </div>
+    </div>
+
+    <div id = "site-header-name">
+      ADDulting
+    </div>
+    <div id = "site-header-socials">
+      Report  Setting
+      <button type="button" onclick="googleLogin()">Login</button>
+    </div>
 
   </header>
   <hr />
@@ -61,6 +71,8 @@
     </div>
     <script src = "main.js"  type = "module"></script>
 
+
+
 <!-- Start of TODO LIST! -->
 <!--
 <div class="all-tasks">
@@ -86,7 +98,7 @@
 
 <div id="myDIV" class="header">
   <h2>Tasks To Do: </h2>
-  <input type="text" id="myInput" placeholder="Title...">
+  <input type="text" id="myInput" placeholder="Task to Add...">
   <span id="taskAdd" class="addBtn" onclick="addTask()">+</span>
   <script src="task.js"></script>
 </div>
@@ -101,14 +113,7 @@
 </ul>
 
 
-  <!-- woo v's spotify code -->
-
-  <div class= "spotify-box">
-        <div style= "position: relative; left: 10%; top: -700%; border-radius: 5%; width: 300px; overflow: hidden;">
-        <iframe src="https://open.spotify.com/embed/playlist/5vwNi0Km340HsC5UfwaaIa?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-        </iframe>
-        </div>
-  </div>
+  
 
 
 
