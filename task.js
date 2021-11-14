@@ -11,4 +11,13 @@ function addTask() {
     span.className = "close";
     span.appendChild(txt);
     toAdd.appendChild(span);
+
+    span.onclick = function() {
+        this.parentElement.remove();
+    }
 };
+
+function deleteTask() {
+    var goodbye = this.parentElement;
+    goodbye.remove();
+}
