@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";//createUserWithEmailAndPassword, signInWithEmailAndPassword, 
 import { getFirestore } from "firebase/firestore"; 
 
 const app = initializeApp({
@@ -32,35 +32,35 @@ const signInWithGoogle = async () => {
         })
 };
 
-const emailSignIn = async (email, password) => {
-    signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            const user = userCredential.user;
-        }).catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-        })
-};
+// const emailSignIn = async (email, password) => {
+//     signInWithEmailAndPassword(auth, email, password)
+//         .then((userCredential) => {
+//             const user = userCredential.user;
+//         }).catch((error) => {
+//             const errorCode = error.code;
+//             const errorMessage = error.message;
+//         })
+// };
 
-const registerWithEmailAndPassword = async (name, email, password) => {
-    createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            const user = userCredential.user;
-        }).catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-        });
-};
+// const registerWithEmailAndPassword = async (name, email, password) => {
+//     createUserWithEmailAndPassword(auth, email, password)
+//         .then((userCredential) => {
+//             const user = userCredential.user;
+//         }).catch((error) => {
+//             const errorCode = error.code;
+//             const errorMessage = error.message;
+//         });
+// };
 
-const sendPasswordResetEmail = async (email) => {
-    try {
-        await auth.sendPasswordResetEmail(email);
-        alert("Password reset link sent!");
-    } catch (err) {
-        console.error(err);
-        alert(err.message);
-    }
-};
+// const sendPasswordResetEmail = async (email) => {
+//     try {
+//         await auth.sendPasswordResetEmail(email);
+//         alert("Password reset link sent!");
+//     } catch (err) {
+//         console.error(err);
+//         alert(err.message);
+//     }
+// };
 
 const logout = () => {
     signOut(auth).then(() => {

@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "src",
+    "public": "ADDulting",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   },
   "emulators": {
