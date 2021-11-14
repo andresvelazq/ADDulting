@@ -8,9 +8,12 @@
   .login__container {
     display: flex;
     flex-direction: column;
+    border-radius: 5%;
+    border-style: dashed solid;
     text-align: center;
-    background-color: #dcdcdc;
-    padding: 30px;
+    background-color: white;
+    padding: 15px;
+    font-weight: bold;
   }
   .login__textBox {
     padding: 10px;
@@ -18,15 +21,16 @@
     margin-bottom: 10px;
   }
   .login__btn {
-    padding: 10px;
+    padding: 50px;
     font-size: 18px;
     margin-bottom: 10px;
+    border-radius: 8%;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #257183;
   }
   .login__google {
-    background-color: #4285f4;
+    background-color: #257183;
   }
   .login div {
     margin-top: 7px;
