@@ -40,15 +40,16 @@ hr {
   align-items: center;
   border-radius: 25px;
   background-color: #51a9bd;
-  height: 150px;
+  height: 100px;
   width: 300px;
-  padding: 50px;
+  padding: 30px;
 
 }
 
 .timer__part {
   font-size: 56 px;
   font-weight: bold;
+  font-size: xxx-large;
 }
 
 .timer__btn {
@@ -62,12 +63,27 @@ hr {
   cursor: pointer;
 }
 
+.timer_btn--reset {
+  color: #4d9eb100;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
 .timer__btn--start {
   background: #65cd65;
 }
 
 .timer__btn--stop {
   background: red;
+}
+
+.timer__btn--pomodoro {
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 
@@ -150,7 +166,6 @@ hr {
   background-color: #9eced9;
   border-radius: 10px;
 }
-
 
 
 

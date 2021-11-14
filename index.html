@@ -23,7 +23,39 @@
   </header>
   <hr />
   <main class = "site-main">
+
+  <div class = "timer-buttons">
+
+  <button type = "button" class = "timer__btn timer__btn--pomodoro">
+  <span class = "material-icons">emoji_objects</span>
+   </button>
+   <button type = "button" class = "timer__btn timer__btn--shortbreak">
+   <span class = "material-icons">free_breakfast</span>
+    </button>
+    <button type = "button" class = "timer__btn timer__btn--longbreak">
+    <span class = "material-icons">bed</span>
+     </button>
+  </div>
+
+
+
     <div class="timer">
+
+<!-- <div class = "container">
+      <div class = "timer-buttons">
+      <button type = "button" class = "timer__btn timer__btn--pomodoro">
+      <span class = "material-icons">emoji_objects</span>
+       </button>
+       <button type = "button" class = "timer__btn timer__btn--shortbreak">
+       <span class = "material-icons">free_breakfast</span>
+        </button>
+        <button type = "button" class = "timer__btn timer__btn--longbreak">
+        <span class = "material-icons">bed</span>
+         </button>
+      </div>
+</div> -->
+
+
       <span class="timer__part timer__part--minutes">00</span>
       <span class="time__part">:</span>
         <span class="timer__part timer__part--seconds">00</span>
@@ -31,9 +63,12 @@
         <span class = "material-icons">play_arrow</span>
          </button>
 
-         <button type = "button" class = "timer__btn timer__btn--reset">
-         <span class = "material-icons">timer</span>
-          </button>
+         <!-- <button type = "button" class = "timer__btn timer__btn--pomodoro">
+         <span class = "material-icons">emoji_objects</span>
+          </button> -->
+
+          <span class = "timer__btn--reset"></span>
+
     </div>
     <script src = "main.js"  type = "module"></script>
 

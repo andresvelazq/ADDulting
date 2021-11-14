@@ -8,7 +8,16 @@ export default class Timer {
     minutes: root.querySelector(" .timer__part--minutes"),
     seconds: root.querySelector(" .timer__part--seconds"),
     control: root.querySelector(" .timer__btn--control"),
-    reset: root.querySelector(" .timer__btn--reset")
+    reset: root.querySelector(" .timer__btn--reset"),
+
+//  pomodoro: root.getElementsByClassName('timer__btn--pomodoro'),
+    pomodoro: root.querySelector(" .timer__btn--pomodoro"),
+    shortbreak: root.querySelector(" .timer__btn--shortbreak"),
+    longbreak: root.querySelector(" .timer__btn--longbreak")
+    // add three buttons here
+    // putton for pomodoro
+    // button for short break
+    // button for long break
   };
 
 
@@ -21,6 +30,8 @@ export default class Timer {
   //
   //
 
+
+
   this.el.control.addEventListener("click", () => {
       if (this.interval === null) {
         this.start();
@@ -31,9 +42,56 @@ export default class Timer {
 
     this.el.reset.addEventListener("click", () => {
       this.stop();
-      this.remainingSeconds = 25 * 60;
+      this.remainingSeconds = 30 * 60;
       this.updateInterfaceTime();
       });
+
+      this.el.pomodoro.addEventListener("click", () => {
+          if (this.interval === null) {
+            this.start();
+          } else {
+            this.stop();
+          }
+        });
+
+        this.el.pomodoro.addEventListener("click", () => {
+          this.stop();
+          this.remainingSeconds = 25 * 60;
+          this.updateInterfaceTime();
+          });
+
+
+        this.el.shortbreak.addEventListener("click", () => {
+            if (this.interval === null) {
+              this.start();
+            } else {
+              this.stop();
+            }
+          });
+
+          this.el.shortbreak.addEventListener("click", () => {
+            this.stop();
+            this.remainingSeconds = 5 * 60;
+            this.updateInterfaceTime();
+            });
+
+
+          this.el.longbreak.addEventListener("click", () => {
+              if (this.interval === null) {
+                this.start();
+              } else {
+                this.stop();
+              }
+            });
+
+            this.el.longbreak.addEventListener("click", () => {
+              this.stop();
+              this.remainingSeconds = 15 * 60;
+              this.updateInterfaceTime();
+              });
+
+
+
 
         // const inputMinutes = prompt("Enter number of minutes:");
         //

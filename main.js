@@ -4,5 +4,5 @@ console.log(document.querySelector(".timer"));
 
 
 new Timer(
-  document.querySelector(".timer")
+  document.querySelector(".site-main")
 );
